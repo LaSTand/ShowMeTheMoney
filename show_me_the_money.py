@@ -24,8 +24,8 @@ Y_array = [0, 0,
 
 def linear_regression_predict(indep, dep):
 	linear_regression = linear_model.LinearRegression()
-	linear_regression.fit(X = pd.DataFrame(indep), y = dep)
-	return linear_regression.predict(X = pd.DataFrame([init_array]))
+	linear_regression.fit(X=pd.DataFrame(indep), y=dep)
+	return linear_regression.predict(X=pd.DataFrame([init_array]))
 
 def append_new_value(array, value):
 	return np.append(array, value)
